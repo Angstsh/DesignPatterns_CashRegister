@@ -1,0 +1,10 @@
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\bin\Debug\CashRegister.exe.config
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\bin\Debug\CashRegister.exe
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\bin\Debug\CashRegister.pdb
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\obj\Debug\CashRegister.csprojAssemblyReference.cache
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\obj\Debug\CashRegister.Form1.resources
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\obj\Debug\CashRegister.Properties.Resources.resources
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\obj\Debug\CashRegister.csproj.GenerateResource.cache
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\obj\Debug\CashRegister.csproj.CoreCompileInputs.cache
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\obj\Debug\CashRegister.exe
+D:\A_Code\B_Git\GIT\DesignPatterns\cashregister\CashRegister\obj\Debug\CashRegister.pdb
