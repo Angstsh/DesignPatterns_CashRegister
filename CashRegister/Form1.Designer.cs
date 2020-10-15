@@ -36,6 +36,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.lbxList = new System.Windows.Forms.ListBox();
             this.lblResult = new System.Windows.Forms.Label();
+            this.cbxType = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -58,21 +60,21 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(82, 6);
+            this.txtPrice.Location = new System.Drawing.Point(100, 6);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(140, 25);
             this.txtPrice.TabIndex = 2;
             // 
             // txtNum
             // 
-            this.txtNum.Location = new System.Drawing.Point(82, 42);
+            this.txtNum.Location = new System.Drawing.Point(100, 42);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(140, 25);
             this.txtNum.TabIndex = 3;
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(264, 6);
+            this.btnOk.Location = new System.Drawing.Point(264, 4);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 25);
             this.btnOk.TabIndex = 4;
@@ -82,7 +84,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(264, 42);
+            this.button2.Location = new System.Drawing.Point(264, 40);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 25);
             this.button2.TabIndex = 5;
@@ -93,7 +95,7 @@
             // 
             this.lbxList.FormattingEnabled = true;
             this.lbxList.ItemHeight = 15;
-            this.lbxList.Location = new System.Drawing.Point(15, 92);
+            this.lbxList.Location = new System.Drawing.Point(15, 102);
             this.lbxList.Name = "lbxList";
             this.lbxList.Size = new System.Drawing.Size(324, 124);
             this.lbxList.TabIndex = 6;
@@ -107,11 +109,30 @@
             this.lblResult.TabIndex = 7;
             this.lblResult.Text = "总计：";
             // 
+            // cbxType
+            // 
+            this.cbxType.FormattingEnabled = true;
+            this.cbxType.Location = new System.Drawing.Point(100, 73);
+            this.cbxType.Name = "cbxType";
+            this.cbxType.Size = new System.Drawing.Size(140, 23);
+            this.cbxType.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "计算方式：";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(372, 348);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbxType);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lbxList);
             this.Controls.Add(this.button2);
@@ -122,6 +143,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "商场收银系统";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,6 +159,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListBox lbxList;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.ComboBox cbxType;
+        private System.Windows.Forms.Label label3;
     }
 }
 
