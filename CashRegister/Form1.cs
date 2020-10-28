@@ -22,13 +22,26 @@ namespace CashRegister
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            CashSuper csuper = CashFactory.createCashAccept(cbxType.SelectedItem.ToString());
+            CashContext cc = null;
+            switch (cbxType.SelectedItem.ToString())
+            {
+                case "正常收费":
+                    cc = new CashContext(new CashNormal());
+                    break;
+                case "满300返100":
+                    cc = new CashContext(new CashReturn("300", "100"));
+                    break;
+                case "打8折":
+                    cc = new CashContext(new CashRebate("0.8"));
+                    break;
+            }
+
             double totalPrices = 0d;
-            totalPrices = csuper.acceptCash(Convert.ToDouble(txtPrice.Text)
-                *Convert.ToDouble(txtNum.Text));
+            totalPrices = cc.GetResult(Convert.ToDouble(txtPrice.Text)
+                * Convert.ToDouble(txtNum.Text));
             total = total + totalPrices;
-            lbxList.Items.Add("单价："+txtPrice.Text+"数量："+txtNum.Text+
-                " "+cbxType.SelectedItem+" 合计："+totalPrices.ToString());
+            lbxList.Items.Add("单价：" + txtPrice.Text + "数量：" + txtNum.Text +
+                " " + cbxType.SelectedItem + " 合计：" + totalPrices.ToString());
             lblResult.Text = total.ToString();
         }
 
